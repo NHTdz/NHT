@@ -19,9 +19,9 @@ public class Trongcay {
 		int count1 = (CD - space/2)/ space +1;
 		int count2 = (CR - space/2)/ space +1;
 		int tong = count1*count2;
-		System.out.println("Tổng số cây trồng được là" + tong);
+		System.out.println("Tổng số cây trồng được là:" + tong);
 		float sTancay = tong * (space/2 )*(space/2 )* Pi;
-		System.out.print("Không gian sé chiếm khi cây phát triển đầy đủ là" + sTancay);
+		System.out.print("Không gian sé chiếm khi cây phát triển đầy đủ là:" + sTancay);
 		
 		
 		

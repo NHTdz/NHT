@@ -9,6 +9,7 @@ public class ToadoM {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Xác đinh điểm M trong hay ngoài đường tròn");
+		String viTri = null;
 		Scanner vao = new Scanner(System.in);
 		System.out.print("Nhập hoành độ tâm C(x) :");
 		int xo = Integer.parseInt(vao.nextLine());
@@ -22,13 +23,19 @@ public class ToadoM {
 		int y = Integer.parseInt(vao.nextLine());
 		int OM = (xo + x)*(xo + x) + (yo +y)*(yo +y);
 		if ( OM < r*r ) {
-			System.out.println("Điểm M nằm trong đường tròn C");
+			viTri = "Điểm M nằm trong đường tròn C";
 		} else if (OM == r*r) {
-			System.out.println("Điểm M nằm trên đường tròn C");
+			viTri = "Điểm M nằm trên đường tròn C";
 		} else if (OM> r*r) {
-			System.out.println("Điểm M nằm ngoài đường tròn C");
+			viTri = "Điểm M nằm ngoài đường tròn C";
 		}
-
+		
+		System.out.println(viTri);
+		
 	}
-
+	
 }
+
+
+		
+
